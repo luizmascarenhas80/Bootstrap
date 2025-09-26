@@ -23,8 +23,12 @@ nav {
     padding-bottom: 18px;
 }
 nav a {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (opcional) */
+    height: 60px;         
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     color: #FFF;
     font-weight: 700;
 }
@@ -121,6 +125,7 @@ nav a {
     max-width: 1400px;
     margin: auto;
 }
+
 @media only screen and (max-width: 768px) {
     .row .msg .container h1 {
         font-size: 2.4rem;
