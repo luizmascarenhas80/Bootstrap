@@ -72,7 +72,7 @@ nav a {
 }
 
 .row .container .grid .column {
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
@@ -110,7 +110,7 @@ nav a {
     background: #343a40;
 }
 
-.rodape .container .p {
+.rodape .container p {
     color: #FFF;
     font-size: 1rem;
     text-align: center;
@@ -120,4 +120,22 @@ nav a {
     width: 90%;
     max-width: 1400px;
     margin: auto;
+}
+@media only screen and (max-width: 768px) {
+    .row .msg .container h1 {
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+        color: #212529;
+    }
+    
+    .row .container .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 50px;
+        width: 100%;
+        min-height: 100%;
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
 }
